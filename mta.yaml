@@ -1,0 +1,14 @@
+ID: default
+_schema-version: '2.1'
+version: 0.0.1
+resources:
+  - name: default-conn
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service-plan: lite
+      service: connectivity
+  - name: default-dest
+    parameters:
+      service-plan: lite
+      service: destination
+    type: org.cloudfoundry.managed-service
